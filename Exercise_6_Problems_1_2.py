@@ -17,11 +17,13 @@ import numpy as np
 data = None
 
 # YOUR CODE HERE 1
-
+data = pd.read_csv('data/1091402.txt', delim_whitespace=True, skiprows=[1],na_values='-9999')
+print(data.head())
+print(data.tail())
 # ### Part 2 
-# 
+# data/1091402.txt
 # In this section, you will calculate simple statistics based on the input data:
-# 
+# install
 # - Calculate how many no-data (NaN) values there are in the `TAVG` column
 #     - Assign your answer to a variable called `tavg_nodata_count`.
 
@@ -40,7 +42,6 @@ print('Number of no-data values in column "TAVG":',tavg_nodata_count)
 
 tmin_nodata_count = None
 #YOUR CODE HERE 3
-
 #CAUTION!!! DON'T EDIT THIS PART START
 # Print out the solution:
 print('Number of no-data values in column "TMIN":', tmin_nodata_count)
