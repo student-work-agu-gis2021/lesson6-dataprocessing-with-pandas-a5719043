@@ -190,6 +190,8 @@ For this problem your goal is to calculate monthly average temperatures in degre
 monthly_data = None
 
 # YOUR CODE HERE 9
+temp_celsius = None
+
 ```
 
 

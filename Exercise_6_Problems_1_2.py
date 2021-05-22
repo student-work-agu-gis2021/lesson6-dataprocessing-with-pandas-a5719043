@@ -105,7 +105,9 @@ print('Average temperature (F) for the whole dataset:', round(avg_temp, 2))
 avg_temp_1969 = None
 
 # YOUR CODE HERE 8
-
+data_51to831=None
+data_51to831=data.query('19690501<=DATE<=19690831')
+avg_temp_1969=np.mean(data_51to831.iloc[:,7])
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print a number
 print('Average temperature (F) for the Summer of 69:', round(avg_temp_1969, 2))
