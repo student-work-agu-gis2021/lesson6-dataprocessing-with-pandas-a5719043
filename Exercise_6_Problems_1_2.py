@@ -120,6 +120,21 @@ print('Average temperature (F) for the Summer of 69:', round(avg_temp_1969, 2))
 monthly_data = None
 
 # YOUR CODE HERE 9
+data['DATE_STR'] = data['DATE'].astype(str)
+data['MONTH']=data['DATE_STR'].str.slice(start=4, stop=6)
+jan = data[data['MONTH']=="01"]
+feb = data[data['MONTH']=="02"]
+mar = data[data['MONTH']=="03"]
+apr = data[data['MONTH']=="04"]
+may = data[data['MONTH']=="05"]
+jun = data[data['MONTH']=="06"]
+jul = data[data['MONTH']=="07"]
+aug = data[data['MONTH']=="08"]
+sep = data[data['MONTH']=="09"]
+octo = data[data['MONTH']=="10"]
+nov = data[data['MONTH']=="11"]
+dec = data[data['MONTH']=="12"]
+monthly_data['temp_celsius']=0
 
 #CAUTION!!! DON'T EDIT THIS PART START
 # This test print should print the length of variable monthly_data
